@@ -1,0 +1,36 @@
+{
+  "HorizonLayout": [
+    {
+      "layout": "circleCategory"
+    },
+    {
+      "layout": "bannerHigh",
+      "tag":67
+    },
+    {
+      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/rsz_21homegrown_app_insurance.png",
+      "layout": "bannerImage",
+      "height": 200,
+      "category": 99
+    },
+    {
+      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/rsz_1homegrown_app_training.png",
+      "layout": "bannerImage",
+      "height": 200,
+      "category": 96
+    },
+    {
+      "name": "featureProducts",
+      "image": "",
+      "layout": "threeColumn",
+      "category": 99
+    },
+    {
+      "name": "bagsCollections",
+      "image": "",
+      "layout": "twoColumn",
+      "category": 96
+    }
+  ],
+  "MainColor": "#3FC1BE"
+}

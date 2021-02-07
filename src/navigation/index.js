@@ -32,6 +32,7 @@ import FiltersScreen from "./FiltersScreen";
 import AddressScreen from "./AddressScreen";
 import AddAddressScreen from "./AddAddressScreen";
 import AuthLoadingScreen from "./AuthLoadingScreen";
+import GetQuoteScreen from "./GetQuoteScreen";
 
 import TransitionConfig from "./TransitionConfig";
 

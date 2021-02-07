@@ -8,13 +8,31 @@
       "tag":67
     },
     {
-      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/rsz_21homegrown_app_insurance.png",
+      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/rsz_homegrown_insurance.png",
       "layout": "bannerImage",
       "height": 200,
       "category": 99
     },
     {
-      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/rsz_1homegrown_app_training.png",
+      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/rsz_homegrown_santam_funeral_1.png",
+      "layout": "bannerImage",
+      "height": 200,
+      "category": 112
+    },
+    {
+      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/rsz_1homegrown_academy.png",
+      "layout": "bannerImage",
+      "height": 200,
+      "category": 110
+    },
+    {
+      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/rsz_homegrown_vaps-1.png",
+      "layout": "bannerImage",
+      "height": 200,
+      "category": 96
+    },
+    {
+      "imageBanner": "https://homegrown.network/wp-content/uploads/2020/12/Homegrown-Data-1.png",
       "layout": "bannerImage",
       "height": 200,
       "category": 96
@@ -26,10 +44,34 @@
       "category": 99
     },
     {
-      "name": "bagsCollections",
+      "name": "Insurance",
       "image": "",
       "layout": "twoColumn",
-      "category": 96
+      "category": 99
+    },
+    {
+      "name": "Funeral",
+      "image": "",
+      "layout": "twoColumn",
+      "category": 112
+    },
+    {
+      "name": "Academy",
+      "image": "",
+      "layout": "twoColumn",
+      "category": 110
+    },
+    {
+      "name": "ValueAdds",
+      "image": "",
+      "layout": "twoColumn",
+      "category": 113
+    },
+    {
+      "name": "Data",
+      "image": "",
+      "layout": "twoColumn",
+      "category": 111
     }
   ],
   "MainColor": "#3FC1BE"

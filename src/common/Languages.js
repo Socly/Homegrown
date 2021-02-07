@@ -285,7 +285,11 @@ export default new LocalizedStrings({
 
     // Horizontal
     featureProducts: "Insurance",
-    bagsCollections: "Training",
+    Insurance: "Insurance",
+    Funeral: "Funeral",
+    Academy: "Academy",
+    ValueAdds: "Valuen Adds",
+    Data: "Data",
     womanBestSeller: "Woman Best Seller",
     manCollections: "Man Collections",
 

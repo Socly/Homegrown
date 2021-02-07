@@ -35,39 +35,34 @@ export default {
 
     {
       category: 99,
-      image: require("@images/categories_icon/family-insurance.png"),
+      image: require("@images/categories_icon/Insurance.png"),
       colors: ["#43e97b", "#38f9d7"],
       label: "Insurance",
     },
     {
-      category: 96,
-      image: require("@images/categories_icon/travel-insurance.png"),
+      category: 112,
+      image: require("@images/categories_icon/Funeral.png"),
       colors: ["#fa709a", "#fee140"],
-      label: "Training",
+      label: "Funeral",
     },
     {
-      category: 99,
-      image: require("@images/categories_icon/family-insurance.png"),
+      category: 110,
+      image: require("@images/categories_icon/Academy.png"),
       colors: ["#43e97b", "#38f9d7"],
-      label: "Insurance",
-    },
+      label: "Academy",
+    }, 
+
     {
-      category: 99,
-      image: require("@images/categories_icon/travel-insurance.png"),
-      colors: ["#fa709a", "#fee140"],
-      label: "Training",
-    },
-    {
-      category: 4,
-      image: require("@images/categories_icon/health-insurance.png"),
+      category: 113,
+      image: require("@images/categories_icon/Value-Added.png"),
       colors: ["#7F00FF", "#E100FF"],
-      label: "Health",
+      label: "Value Adds",
     },
     {
-      category: 24,
-      image: require("@images/categories_icon/health-insurance.png"),
+      category: 111,
+      image: require("@images/categories_icon/Data.png"),
       colors: ["#30cfd0", "#330867"],
-      label: "Bags",
+      label: "Data",
     },
   ],
   HomeCategories_AR: [
@@ -301,11 +296,11 @@ export default {
 
   // Homepage Layout setting
   layouts: [
-    // {
-    //   layout: Constants.Layout.card,
-    //   image: Images.icons.iconCard,
-    //   text: "cardView",
-    // },
+    {
+      layout: Constants.Layout.card,
+      image: Images.icons.iconCard,
+      text: "cardView",
+    },
     {
       layout: Constants.Layout.simple,
       image: Images.icons.iconRight,

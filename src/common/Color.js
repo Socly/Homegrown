@@ -81,9 +81,9 @@ export default {
 
   lightGrey: "rgba(247, 248, 250, 1)",
   lightGrey1: "rgba(212, 220, 255, 1)",
-  darkOrange: "rgba(255, 132, 11, 1)",
-  darkYellow: "rgba(255, 164, 31, 1)",
-  yellow: "rgba(255, 198, 53, 1)",
+  darkOrange: "#F8D22F",
+  darkYellow: "#F8D22F",
+  yellow: "#F8D22F",
   darkRed: "#8B0000",
   red: "#FF0000",
   lightgrey: "#D3D3D3",

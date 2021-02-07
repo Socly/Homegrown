@@ -7,11 +7,14 @@ import {
   ScrollView,
   TouchableOpacity,
   TextInput,
+  Button,
+  Alert
 } from "react-native";
 import { connect } from "react-redux";
 import { SwipeRow } from "react-native-swipe-list-view";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { LinearGradient } from "@expo";
+
 
 import { toast } from "@app/Omni";
 import { ProductItem } from "@components";
@@ -22,12 +25,40 @@ import styles from "./styles";
 class MyCart extends PureComponent {
   constructor(props) {
     super(props);
-
     this.state = {
       coupon: props.couponCode,
+      text: '',
+      full_name:'',
+      ID_number:'',
+      email:'',
+      phone:'',
+      message:'',
     };
   }
 
+  onPressGetQuote = () => {
+    this.setState({
+      full_name:'',
+      ID_number:'',
+      email:'',
+      phone:'',
+      message:'',
+    })
+    Alert.alert(
+      "Thank you",
+      "Your Quote has been sent to us",
+      "you will be notified soon..",
+      [
+        {
+          text: "Cancel",
+          onPress: () => console.log("Cancel Pressed"),
+          style: "cancel"
+        },
+        { text: "OK", onPress: () => console.log("OK Pressed") }
+      ],
+      { cancelable: false }
+    );
+  };
   componentWillReceiveProps(nextProps) {
     if (
       nextProps.hasOwnProperty("type") &&
@@ -133,6 +164,62 @@ class MyCart extends PureComponent {
                 {Languages.applyCouponSuccess + this.getCouponString()}
               </Text>
             )}
+          </View>
+          <View style={{flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
+            <Text style={{fontWeight:'bold',fontSize:20,marginBottom:10}}>
+            Fill in the form below to get a quote
+            </Text>
+            <View style={{marginBottom:10}}>
+              <Text style={{color:'gray'}}>Full Name:</Text>
+              <TextInput
+                value={this.state.full_name}
+                onChangeText={(full_name) => this.setState({ full_name})}
+                style={{borderBottomColor:'#fad20d',paddingTop:10,paddingBottom:10,borderBottomWidth:2, width:328}}
+              />
+            </View>
+            <View style={{marginBottom:10}}>
+              <Text style={{color:'gray'}}>ID No:</Text>
+              <TextInput
+                value={this.state.ID_number}
+                onChangeText={(text) => this.setState({ ID_number:text })}
+                style={{borderBottomColor:'#fad20d',paddingTop:10,paddingBottom:10,borderBottomWidth:2, width:328}}
+              />
+            </View>
+            <View style={{marginBottom:10}}>
+              <Text style={{color:'gray'}}>Email:</Text>
+              <TextInput
+                value={this.state.email}
+                onChangeText={(text) => this.setState({ email:text })}
+                style={{borderBottomColor:'#fad20d',paddingTop:10,paddingBottom:10,borderBottomWidth:2, width:328}}
+              />
+            </View>
+            <View style={{marginBottom:10}}>
+              <Text style={{color:'gray'}}>Phone:</Text>
+              <TextInput
+                value={this.state.phone}
+                onChangeText={(text) => this.setState({ phone:text })}
+                style={{borderBottomColor:'#fad20d',paddingTop:10,paddingBottom:10,borderBottomWidth:2, width:328}}
+              />
+            </View>
+            <View style={{marginBottom:10,marginBottom:10}}>
+              <Text style={{color:'gray'}}>Message</Text>
+              <TextInput
+                value={this.state.message}
+                multiline={true} 
+                numberOfLines={35} 
+                maxLength={1000}
+                onChangeText={(text) => this.setState({ message:text })}
+                style={{borderBottomColor:'#fad20d',paddingTop:10,paddingBottom:10,borderBottomWidth:2, width:328}}
+              />
+              <View style={{marginTop:10,backgroundColor:'#F8D22F',fontWeight:'bold'}}>
+                <Button
+                  onPress={this.onPressGetQuote}
+                  title="Get Quote"
+                  color="black"
+                  accessibilityLabel="Get Quote"
+                />
+              </View>
+            </View>
           </View>
         </ScrollView>
       </View>

@@ -1,0 +1,6 @@
+module Pods_mstore {
+  umbrella header "Pods-mstore-umbrella.h"
+
+  export *
+  module * { export * }
+}

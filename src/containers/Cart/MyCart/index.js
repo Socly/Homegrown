@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { PureComponent } from "react";
+import axois from "axios";
 import {
   Text,
   View,
@@ -21,6 +22,7 @@ import { ProductItem } from "@components";
 import { Languages, Color, withTheme, Tools } from "@common";
 import css from "@cart/styles";
 import styles from "./styles";
+import { result } from "validate.js";
 
 class MyCart extends PureComponent {
   constructor(props) {
@@ -44,20 +46,21 @@ class MyCart extends PureComponent {
       phone:'',
       message:'',
     })
-    Alert.alert(
-      "Thank you",
-      "Your Quote has been sent to us",
-      "you will be notified soon..",
-      [
-        {
-          text: "Cancel",
-          onPress: () => console.log("Cancel Pressed"),
-          style: "cancel"
-        },
-        { text: "OK", onPress: () => console.log("OK Pressed") }
-      ],
-      { cancelable: false }
-    );
+    let url = "http://api.homegrown.network/v1/leads/contact_request.php";
+    let data = this.state;
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body:JSON.stringify(data)
+    }).then((result) =>{
+      result.json().then((resp) => {
+        console.warn("resp", resp)
+        alert("Your data is submitted thank you")
+      })
+    })
   };
   componentWillReceiveProps(nextProps) {
     if (
